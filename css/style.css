@@ -1,0 +1,178 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* CSS variable */
+/* :root{
+    --navbar-height:59px;
+} */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#navbar{
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.4
+}
+#logo{
+    margin: 10px 34px;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-variant: unset;
+   
+}
+#logo img{
+    margin:34px ;
+    height: 3px 6px;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;       /*used for remove  circle mark like numbering */  
+    font-size:1.3rem ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#navbar ul li a{
+    color: white;
+    display: block;        /*used for padding*/ 
+    padding: 2px 10px;
+    border-radius: 20px;
+    text-decoration: none;     /*used for remove underline*/
+
+}
+#navbar ul li a:hover{
+    color: rgb(19, 9, 9);
+    background-color: white;
+
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 400px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+}
+#home::before{
+    content: "";
+    background: url('../image/pexels-ba-tik-3754300.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.7;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#home p{
+    color:white ;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* services section */
+#services{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+#services .box{
+    border:2px solid black ;
+    margin:3px 30px ;
+    border-radius: 23px;
+    padding:35px ;
+    background-color:rgb(248, 248, 248) ;
+}
+#services .box img{
+        height: 150px;
+        margin: auto;
+        display: block;
+}
+
+/* contact section */
+#contact{
+    position:relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity:0.8;
+    background: url('../image') no-repeat center center/cover;
+    background:#e4e4ef;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: ;
+    
+}
+#contact-box input,
+#contact-box textarea{
+    width:100% ;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer{
+    color:rgb(248, 248, 248);
+    background: rgb(19, 9, 9);
+    padding: 9px 20px;
+}
+
+/* utility classes */
+.h-primary{
+    font-size:2.3rem;
+    padding: px;
+    margin: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.h-secondary{
+    font-size:1.2rem;
+    padding: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background:rgb(107, 39, 39);
+    color: white;
+    font size: 1.5rem;
+    border-radius:10px;
+    cursor:pointer;
+    margin:37px;
+}
+.center{
+    text-align: center;
+}
+
